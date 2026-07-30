@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>X | One Class One Story</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LOADING -->
+
+<div id="loader">
+
+<h1>X</h1>
+<p>Preparing Memories...</p>
+
+</div>
+
+
+
+
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav>
+
+<h2>📘 X</h2>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#struktur">Struktur</a></li>
+<li><a href="#siswa">Siswa</a></li>
+<li><a href="#jadwal">Jadwal</a></li>
+<li><a href="#galeri">Galeri</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+
+<div class="hero-box">
+
+
+<h1>X</h1>
+
+
+<h2>
+"One Class One Story"
+</h2>
+
+
+<p>
+Satu kelas, satu keluarga,
+banyak cerita.
+</p>
+
+
+
+<button onclick="scrollTentang()">
+
+MASUK
+
+</button>
+
+
+
+
+
+
+<div class="clock">
+
+
+<div class="analog">
+
+
+<div id="jarum-jam"></div>
+
+<div id="jarum-menit"></div>
+
+<div id="jarum-detik"></div>
+
+
+</div>
+
+
+
+<h2 id="jam">
+00:00:00
+</h2>
+
+
+<p id="tanggal">
+Loading...
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- TENTANG -->
+
+<section id="tentang">
+
+
+<h1>
+Tentang Kelas
+</h1>
+
+
+
+<div class="info-box">
+
+
+<div>
+<h2>30</h2>
+<p>Siswa</p>
+</div>
+
+
+<div>
+<h2>1</h2>
+<p>Keluarga</p>
+</div>
+
+
+<div>
+<h2>1000+</h2>
+<p>Cerita</p>
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- STRUKTUR -->
+
+<section id="struktur">
+
+
+<h1>
+Struktur Organisasi
+</h1>
+
+
+
+<div id="struktur-container">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SISWA -->
+
+
+<section id="siswa">
+
+
+<h1>
+Anggota Kelas X
+</h1>
+
+
+
+<div id="siswa-container">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- JADWAL -->
+
+
+<section id="jadwal">
+
+
+<h1>
+Jadwal Pelajaran
+</h1>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Hari
+</th>
+
+
+<th>
+Pelajaran
+</th>
+
+
+</tr>
+
+
+
+<tr>
+
+<td>Senin</td>
+
+<td>
+🔥 Pemrograman<br>
+🔥 Basis Data
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Selasa</td>
+
+<td>
+🔥 Matematika<br>
+🔥 Bahasa Inggris
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Rabu</td>
+
+<td>
+🔥 Pemrograman Web<br>
+🔥 Jaringan
+</td>
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>Kamis</td>
+
+<td>
+🔥 Produktif<br>
+🔥 Database
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>Jumat</td>
+
+<td>
+🔥 Projek<br>
+🔥 Agama
+</td>
+
+</tr>
+
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- GALERI -->
+
+
+<section id="galeri">
+
+
+<h1>
+Galeri Kenangan
+</h1>
+
+
+
+<div class="gallery">
+
+
+<img src="img/foto1.jpg">
+
+<img src="img/foto2.jpg">
+
+<img src="img/foto3.jpg">
+
+<img src="img/foto4.jpg">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- QUOTES -->
+
+
+<section class="quotes">
+
+
+<h1 id="quote">
+
+"Kenangan hari ini,
+cerita untuk nanti."
+
+</h1>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PESAN -->
+
+
+<section id="pesan">
+
+
+<h1>
+Kotak Pesan
+</h1>
+
+
+<p>
+Pertanyaan dan masukan siswa
+bisa dikirim ke email kelas.
+</p>
+
+
+
+<form action="https://formspree.io/f/ID_FORM_KAMU"
+method="POST">
+
+
+<input
+type="text"
+name="nama"
+placeholder="Nama">
+
+
+
+<input
+type="email"
+name="email"
+placeholder="Email">
+
+
+
+<textarea
+name="pesan"
+placeholder="Pesan kamu...">
+</textarea>
+
+
+
+<button>
+Kirim
+</button>
+
+
+
+</form>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- POPUP FOTO -->
+
+
+<div id="image-popup">
+
+
+<span id="close-popup">
+×
+</span>
+
+
+<img id="popup-img">
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer>
+
+
+<h2>
+KELAS X
+</h2>
+
+
+<p>
+One Class One Story © 2026
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
