@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>X — Buku Kelas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__wrap">
+      <a href="#home" class="navbar__brand">x&nbsp;&nbsp;barudax pak robi</a>
+      <nav class="navbar__links">
+        <a href="#profil">Profil</a>
+        <a href="#siswa">Siswa</a>
+        <a href="#jadwal">Jadwal</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__margin" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Buku Catatan · Tahun Ajaran 2026/2027</p>
+      <h1 class="hero__title">Kelas <span class="hero__title-mark">x </span></h1>
+      <p class="hero__desc">
+        Satu ruang, tiga puluh dua cerita. Halaman ini adalah catatan kami —
+        siapa saja yang duduk di dalamnya, apa yang sedang dipelajari,
+        dan di mana bisa menemukan kami.
+      </p>
+      <a href="#siswa" class="hero__cta">Lihat isi kelas ↓</a>
+    </div>
+    <div class="hero__pin" aria-hidden="true">📌</div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="section" id="profil">
+    <h2 class="section__title"><span class="section__num">Hal. 01</span>Profil Kelas</h2>
+    <div class="profil__grid">
+      <div class="profil__card">
+        <span class="profil__label">Wali Kelas</span>
+        <span class="profil__value" id="waliKelas">pak robi, S.Pd.</span>
+      </div>
+      <div class="profil__card">
+        <span class="profil__label">Jumlah Siswa</span>
+        <span class="profil__value" id="jumlahSiswa">32</span>
+      </div>
+      <div class="profil__card">
+        <span class="profil__label">Ruang Kelas</span>
+        <span class="profil__value">Kelas 10</span>
+      </div>
+      <div class="profil__card">
+        <span class="profil__label">Motto</span>
+        <span class="profil__value">"Belajar bersama, tumbuh bersama."</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISWA -->
+  <section class="section section--paper" id="siswa">
+    <h2 class="section__title"><span class="section__num">Hal. 02</span>Daftar Siswa</h2>
+    <div class="siswa__toolbar">
+      <input type="text" id="cariSiswa" placeholder="Cari nama siswa..." class="siswa__search">
+    </div>
+    <div class="siswa__grid" id="siswaGrid"></div>
+  </section>
+
+  <!-- JADWAL -->
+  <section class="section" id="jadwal">
+    <h2 class="section__title"><span class="section__num">Hal. 03</span>Jadwal Pelajaran</h2>
+    <div class="jadwal__wrap">
+      <table class="jadwal__table" id="jadwalTable">
+        <thead>
+          <tr>
+            <th>Jam</th>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- GALERI -->
+  <section class="section section--paper" id="galeri">
+    <h2 class="section__title"><span class="section__num">Hal. 04</span>Galeri Kelas</h2>
+    <div class="galeri__grid" id="galeriGrid"></div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section" id="kontak">
+    <h2 class="section__title"><span class="section__num">Hal. 05</span>Kontak</h2>
+    <div class="kontak__box">
+      <p>Ada titip pesan buat kelas? Tulis di sini, nanti kami tempel di papan kelas.</p>
+      <form id="pesanForm" class="kontak__form">
+        <input type="text" id="namaPengirim" placeholder="Nama kamu" required>
+        <textarea id="isiPesan" placeholder="Tulis pesan..." rows="3" required></textarea>
+        <button type="submit">Tempel Pesan</button>
+      </form>
+      <ul class="kontak__list" id="daftarPesan"></ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="tahunFooter"></span> Kelas x  — dibuat dengan ✏️ oleh gw.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
